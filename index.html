@@ -130,80 +130,228 @@
 </head>
 <body>
 
-    <!-- Upper Navbar Structure -->
-    v
-    
-    <!-- Section 6: Hobbies -->
-    <section id="hobbies">
+    <nav class="navbar">
+        <a href="#" class="nav-logo">CHOWIE</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PERFECTLY ALIGNED HERO INTRO SECTION -->
+    <section id="hero" style="background: #121324; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; min-height: 90vh; padding: 120px 8% 60px 8%; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        <!-- LEFT SIDE: Luffy Image Container -->
+        <div style="flex: 0 1 300px; display: flex; justify-content: center; align-items: center;">
+            <img src="luffy-hero.png" alt="Luffy Yo!" style="width: 100%; max-width: 300px; height: auto; display: block;">
+        </div>
+
+        <!-- RIGHT SIDE: Text Content Wrapper -->
+        <div style="flex: 1; min-width: 300px; max-width: 600px; display: flex; flex-direction: column; justify-content: center; text-align: left;">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 3.5rem; color: #ffffff; font-weight: 800; line-height: 1.1; margin: 0 0 5px 0;">
+                Yo!
+            </h1>
+            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.8rem; color: var(--soft-gold); font-weight: 800; line-height: 1.2; margin: 0 0 20px 0; letter-spacing: -0.5px;">
+                I'M PRINCESS GLORY BATIAO
+            </h2>
+            <div style="border-left: 3px solid var(--soft-gold); padding-left: 15px; margin-top: 5px;">
+                <p style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: #ffffff; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin: 0;">
+                    Bachelor of Science in Information System
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about" style="background: var(--bg-deep-navy); padding: 100px 8%; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        <h2 class="section-title" style="margin-bottom: 40px;">About Me</h2>
         
-        <h2 class="section-title">Hobbies</h2>
+        <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 50px; flex-wrap: wrap;">
+            <!-- Left Side: Profile Picture Box -->
+            <div style="flex: 0 0 280px; max-width: 280px; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid rgba(255, 255, 255, 0.05);">
+                <img src="photo_2026-06-06_13-26-41.jpg" alt="Princess Glory" style="width: 100%; height: auto; display: block; object-fit: cover;">
+            </div>
+
+           <!-- Right Side: Biography Text Box -->
+            <div style="flex: 1; min-width: 300px; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">
+                <p style="margin-bottom: 20px;">
+                    I am currently a student at <strong style="color: var(--soft-gold); font-weight: 600;">Davao del Norte State College</strong> under the <strong style="color: var(--soft-gold); font-weight: 600;">Institute of Computing</strong>, exploring technology and systems development. 
+                </p>
+                <p style="margin-bottom: 20px;">
+                    My academic journey is focused on mastering the core building blocks of development, expanding my technical knowledge base, and turning innovative ideas into functioning digital solutions.
+                </p>
+                <p>
+                    Beyond technical systems management, I actively explore creative media formats, team collaborations, and artistic production environments that challenge standard perspectives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" style="background: var(--bg-deep-navy); padding: 100px 8%; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        <h2 class="section-title" style="margin-bottom: 35px;">Skills</h2>
         
-        <!-- Grid layout matching the boxes from image_1ec6e1.png -->
-        <div class="content-grid">
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+            <!-- Skill Pill 1 -->
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 500; padding: 12px 24px; border-radius: 30px; border: 1px solid rgba(220, 191, 92, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fa-brands fa-java" style="color: var(--soft-gold); font-size: 1.1rem;"></i> Basic Java
+            </span>
             
-            <!-- Hobby Card 1 -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
-                    <i class="fa-solid fa-gamepad" style="color: #60ACF9; font-size: 1.6rem;"></i> 
-                    Playing Online/Offline Games
-                </h3>
-                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300; line-height: 1.6;">
-                    Especially <strong style="color: var(--soft-gold); font-weight: 600;">CODM, Minecarft, and Block Blast & Subway Suft </strong> — my favorite way to relax.
-                </p>
+            <!-- Skill Pill 2 -->
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 500; padding: 12px 24px; border-radius: 30px; border: 1px solid rgba(220, 191, 92, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-cubes" style="color: var(--soft-gold); font-size: 1.1rem;"></i> Basic Java GUI Drag & Drop
+            </span>
+            
+            <!-- Skill Pill 3 -->
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 500; padding: 12px 24px; border-radius: 30px; border: 1px solid rgba(220, 191, 92, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-database" style="color: var(--soft-gold); font-size: 1.1rem;"></i> Basic Java Database
+            </span>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="projects" style="background: var(--bg-deep-navy); padding: 100px 8%; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 40px; color: #60ACF9;">Featured Work</h2>
+        
+        <div class="content-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+            
+            <!-- Project 1: Traffic Violation Management System -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <span style="background: rgba(96, 172, 249, 0.1); color: #60ACF9; font-size: 0.75rem; font-weight: 700; uppercase; letter-spacing: 1px; padding: 6px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px;">
+                        <i class="fa-solid fa-code"></i> Java & XAMPP
+                    </span>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.6rem; color: #ffffff; font-weight: 700; margin-bottom: 10px; line-height: 1.3;">
+                        Traffic Violation Management System for Carmen
+                    </h3>
+                    <p style="font-family: 'Montserrat', sans-serif; font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 25px;">
+                        A specialized management platform design to digitalize, track, and streamline traffic citations, record-keeping, and violation monitoring specifically tailored for the municipality of Carmen.
+                    </p>
+                </div>
+                
+                <div>
+                    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #ffffff; font-weight: 600;">
+                        <span><i class="fa-brands fa-java" style="color: var(--soft-gold); margin-right: 6px;"></i> Java</span>
+                        <span style="color: rgba(255,255,255,0.5); font-weight: 400;"><i class="fa-regular fa-calendar" style="color: var(--soft-gold); margin-right: 4px;"></i> 2026</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Hobby Card 2 -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
-                    <i class="fa-solid fa-film" style="color: #60ACF9; font-size: 1.6rem;"></i> 
-                    Watching Movies & Series
-                </h3>
-                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300; line-height: 1.6;">
-                    Watching Horror, thriller, and other interesting films, series, or documentary.
-                </p>
-            </div>
-
-            <!-- Hobby Card 3 -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
-                    <i class="fa-solid fa-palette" style="color: #60ACF9; font-size: 1.6rem;"></i> 
-                    Playing Guitar & Listening Music
-                </h3>
-                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300; line-height: 1.6;">
-                    My timeskip
-                </p>
-            </div>
-
-            <!-- Hobby Card 4 -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
-                    <i class="fa-solid fa-book-open" style="color: #60ACF9; font-size: 1.6rem;"></i> 
-                    Reading & Exploring
-                </h3>
-                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300; line-height: 1.6;">
-                    Its in my nature to be curious, but I didn't kill the cat
-                </p>
+            <!-- Project 2: Research Plan -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <span style="background: rgba(220, 191, 92, 0.1); color: var(--soft-gold); font-size: 0.75rem; font-weight: 700; uppercase; letter-spacing: 1px; padding: 6px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px;">
+                        <i class="fa-solid fa-book-bookmark"></i> RESEARCH PLAN
+                    </span>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.6rem; color: #ffffff; font-weight: 700; margin-bottom: 10px; line-height: 1.3;">
+                        Ordering Management System: Expanding Development Plan in Yetar Hardware
+                    </h3>
+                    <p style="font-family: 'Montserrat', sans-serif; font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 25px;">
+                        A comprehensive strategic and systems research framework analyzing supply chain scaling, commercial ordering pipelines, and deployment strategy models for automated logistics within Yetar Hardware business operations.
+                    </p>
+                </div>
+                
+                <div>
+                    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #ffffff; font-weight: 600;">
+                        <span><i class="fa-solid fa-chart-line" style="color: var(--soft-gold); margin-right: 6px;"></i> Systems Analysis</span>
+                        <span style="color: rgba(255,255,255,0.5); font-weight: 400;"><i class="fa-regular fa-calendar" style="color: var(--soft-gold); margin-right: 4px;"></i> 2026</span>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
-   <section id="contact" style="border-bottom: none;">
+    <!-- CERTIFICATIONS AND AWARDS SECTION -->
+    <section id="certifications" style="background: var(--bg-deep-navy); padding: 100px 8%; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        <h2 class="section-title" style="margin-bottom: 40px;">Certifications & Awards</h2>
         
-        <h2 class="section-title">Get In Touch</h2>
-        
-        <!-- Primary Contact Methods -->
-        <div class="contact-row">
-            <!-- FIXED: Cleaned up the 'mailto:' link and put your actual email address on the button label -->
-            <a href="mailto:batiao.princessglory@dnsc.edu.ph" class="contact-link">
-                <i class="fa-regular fa-envelope" style="color: var(--soft-gold)"></i> Email Me (batiao.princessglory@dnsc.edu.ph)
-            </a>
-            <a href="https://github.com/Glorianne-fyre" target="_blank" class="contact-link">
-                <i class="fa-brands fa-github" style="color: var(--soft-gold)"></i> GitHub Profile
-            </a>
-        </div>
+        <div class="content-grid">
+            <!-- Cert Card 1: Byte Feast -->
+            <div class="minimal-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 1.3rem; font-weight: 600;">
+                        🏅 Byte Feast
+                    </h3>
+                    <p style="font-size: 0.9rem; color: var(--soft-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 10px 0;">
+                        1st on MTV Spoof Live
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">
+                        Combining two music videos of Dyosa and Hayup sa Ganda into a live creative presentation performance.
+                    </p>
+                </div>
+            </div>
 
-       <section id="contact" style="background: var(--bg-deep-navy); padding: 100px 8%; min-height: auto;">
+            <!-- Cert Card 2: Festival Production -->
+            <div class="minimal-card" style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="width: 100%; height: auto; max-height: 200px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05);">
+                    <img src="photo_2026-06-06_13-26-56.jpg" alt="Seen on Screen Poster" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                </div>
+                <div>
+                    <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; font-weight: 600;">
+                        Festival Production
+                    </h3>
+                    <p style="font-size: 0.9rem; color: var(--soft-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 5px 0;">
+                        Awardee - Seen on Screen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- HOBBIES SECTION -->
+    <section id="hobbies" style="background: var(--bg-deep-navy); padding: 100px 8%; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="content-grid">
+            <!-- Hobby Card 1 -->
+            <div class="minimal-card">
+                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
+                    <i class="fa-solid fa-gamepad" style="color: #60ACF9; font-size: 1.6rem;"></i> Playing Games
+                </h3>
+                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300;">
+                    Especially <strong style="color: var(--soft-gold); font-weight: 600;">CODM, Minecraft, Block Blast, & Subway Surf </strong>— my favorite way to relax.
+                </p>
+            </div>
+
+            <!-- Hobby Card 2 -->
+            <div class="minimal-card">
+                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
+                    <i class="fa-solid fa-film" style="color: #60ACF9; font-size: 1.6rem;"></i> Watching Movies
+                </h3>
+                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300;">
+                    Horror, thriller, and other interesting films, series, or documentaries.
+                </p>
+            </div>
+
+            <!-- Hobby Card 3 -->
+            <div class="minimal-card">
+                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
+                    <i class="fa-solid fa-palette" style="color: #60ACF9; font-size: 1.6rem;"></i> Guitar & Music
+                </h3>
+                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300;">
+                    My timeskip.
+                </p>
+            </div>
+
+            <!-- Hobby Card 4 -->
+            <div class="minimal-card">
+                <h3 class="card-title" style="display: flex; align-items: center; gap: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: #ffffff; font-weight: 500;">
+                    <i class="fa-solid fa-book-open" style="color: #60ACF9; font-size: 1.6rem;"></i> Reading & Exploring
+                </h3>
+                <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300;">
+                    It's in my nature to be curious.
+                </p>
+            </div>
+        </div>
+        </section>
+
+    <!-- Contact-->
+   <section id="contact" style="background: var(--bg-deep-navy); padding: 100px 8%; min-height: auto; border-bottom: none;">
         <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--text-pure); margin-bottom: 30px;">Get In Touch</h2>
         <div style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
             
