@@ -204,7 +204,7 @@
 
     <!-- Upper Navbar Structure -->
     <nav class="navbar">
-        <a href="#" class="nav-logo">PGB.</a>
+        <a href="#" class="nav-logo" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--soft-gold); text-decoration: none;">CHOWIE</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -214,20 +214,41 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+<section id="hero" style="background: #121324; padding: 140px 8% 80px 8%; display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; min-height: 85vh; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+        
+        <!-- LEFT SIDE: Luffy waving picture -->
+        <div style="flex: 0 0 320px; display: flex; justify-content: center; align-items: center;">
+            <img src="Green and Red Modern Geometric Thesis Defense Presentation.png" alt="Luffy Yo!" style="width: 100%; max-width: 320px; height: auto;">
+        </div>
 
-    <section id="about">
+        <!-- RIGHT SIDE: Text Content -->
+        <div style="flex: 1; min-width: 320px; max-width: 650px; font-family: 'Montserrat', sans-serif;">
+            <h1 style="font-size: 3.5rem; color: #ffffff; font-weight: 800; line-height: 1.2; margin: 0 0 10px 0;">
+                Yo!
+            </h1>
+            <h2 style="font-size: 3.2rem; color: var(--soft-gold); font-weight: 800; line-height: 1.2; margin: 0 0 20px 0; letter-spacing: 0.5px;">
+                I'M PRINCESS GLORY BATIAO
+            </h2>
+            <p style="font-size: 1.2rem; color: #ffffff; font-weight: 500; letter-spacing: 1px; border-left: 3px solid var(--soft-gold); padding-left: 15px; margin-top: 25px; text-transform: uppercase;">
+                BACHELOR OF SCIENCE IN INFORMATION SYSTEM
+            </p>
+        </div>
+
+    </section>
+    
+<section id="about">
         <h2 class="section-title" style="margin-top: 20px;">About Me</h2>
         
         <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
-            <!-- Your Solo Profile Photo -->
+            <!-- CORRECT: Your personal solo standing photo -->
             <div style="flex: 0 0 280px; max-width: 280px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                 <img src="photo_2026-06-06_13-26-56.jpg" alt="Princess Glory" style="width: 100%; display: block; object-fit: cover;">
             </div>
             
-            <!-- Your Biography Text -->
+            <!-- Biography Text Container -->
             <div style="flex: 1; min-width: 300px; max-width: 650px;">
                 <p style="margin-bottom: 15px; font-size: 1.05rem; font-weight: 300; line-height: 1.7; color: var(--text-muted);">
-                    Hi, I am Princess Glory. I am currently a student exploring technology and systems development. I am focused on learning the core building blocks of development, expanding my knowledge base, and turning ideas into functioning digital projects.
+                    Hi! I am Princess Glory. I am currently a student exploring technology and systems development. I am focused on learning the core building blocks of development, expanding my knowledge base, and turning ideas into functioning digital projects.
                 </p>
                 <p style="font-size: 1.05rem; font-weight: 300; line-height: 1.7; color: var(--text-muted);">
                     Beyond technical systems management, I actively explore creative media formats, team collaborations, and artistic production environments that challenge standard perspectives.
@@ -238,87 +259,83 @@
 
     <!-- Section 3: Skills -->
     <section id="skills">
-        <p class="section-label">02 // Capabilities</p>
+        
         <h2 class="section-title">Skills</h2>
         <div class="skills-container">
             <div class="skill-item">Basic Java</div>
-            <div class="skill-item">Basic Java GUI Drag & Drop</div>
-            <div class="skill-item">Basic Java Database</div>
-            <div class="skill-item">Basic HTML & CSS</div>
+            <div class="skill-item">Java GUI Drag & Drop</div>
+            <div class="skill-item">Java Database</div>
         </div>
     </section>
 
     <!-- Section 4: Projects -->
-    <section id="projects">
-        <p class="section-label">03 // Development</p>
-        <h2 class="section-title">Projects</h2>
-        <div class="content-grid">
-            <div class="minimal-card">
-                <h3 class="card-title">Traffic Violation System Management</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">A GUI-based CRUD system designed for Local Goverment Unit. The system aims to improve and modernize the process of managing traffic violations .</p>
-            </div>
-            <div class="minimal-card">
-                <h3 class="card-title">Project Name Two</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">Using XAMPP for databased.</p>
-            </div>
+    <section id="skills" style="padding: 60px 0;">
+        <!-- Cleaned up title: "02 // Capabilities" and its blue box are completely removed -->
+        <h2 class="section-title" style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: #ffffff; font-weight: 700; margin-bottom: 30px;">
+            Skills
+        </h2>
+        
+        <!-- Skills Container with modern, borderless tags -->
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; padding: 12px 24px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                Basic Java
+            </span>
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; padding: 12px 24px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                Basic Java GUI Drag & Drop
+            </span>
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; padding: 12px 24px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                Basic Java Database
+            </span>
         </div>
     </section>
 
     <section id="certifications">
         <h2 class="section-title" style="margin-top: 40px;">Certifications & Awards</h2>
         
-        <!-- Grid layout perfectly matching the Hobbies design style -->
         <div class="content-grid">
             
-            <!-- Cert Card 1: Best Actress -->
+            <!-- FIXED Cert Card 1: Best Actress for GUNIT -->
             <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
-                <!-- Card Image (Top) -->
                 <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
-                    <img src="photo_2026-06-06_13-26-49.jpg" alt="Best Actress Award Display" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="photo_2026-06-06_13-26-49.jpg" alt="Best Actress Certificate - Gunit" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <!-- Card Typography & Description (Bottom) -->
                 <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
-                    <i class="fa-solid fa-clapperboard" style="color: #60ACF9; font-size: 1.3rem;"></i>
-                    Best Actress
+                    🎬 Best Actress
+                </h3>
+                <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
+                    Film: "Gunit" // Multimedia Festival 2025
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
+                    Awarded for exceptional acting performance, expressive delivery, and an outstanding ability to bring her character to life with authenticity and grace.
+                </p>
+            </div>
+
+            <!-- FIXED Cert Card 2: Festival Production for SEEN ON SCREEN -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+                <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
+                    <img src="photo_2026-06-06_13-26-41.jpg" alt="Seen on Screen Poster" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                </div>
+                <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                    🪄 Festival Production
                 </h3>
                 <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
                     "Seen on Screen" 2026
                 </p>
                 <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
-                    Recognized for the leading performance contribution in the official dramatic presentation entry representing Davao Del Norte State College.
+                    Honored for excellent collaborative presentation chemistry, outstanding visual effects, and critical recognition inside campus cinema evaluations.
                 </p>
             </div>
 
-            <!-- Cert Card 2: Best Loveteam & Visual Effects -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
-                <!-- Card Image (Top) -->
-                <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
-                    <img src="photo_2026-06-06_13-26-41.jpg" alt="Festival Award Summary" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                </div>
-                <!-- Card Typography & Description (Bottom) -->
+            <!-- Cert Card 3: Byte Feast -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column; min-height: 384px;">
                 <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
-                    <i class="fa-solid fa-wand-magic-sparkles" style="color: #60ACF9; font-size: 1.3rem;"></i>
-                    Festival Production
-                </h3>
-                <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
-                    Best Loveteam & VFX
-                </p>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
-                    Honored for excellent collaborative presentation chemistry and outstanding technical production metrics inside regional cinema evaluations.
-                </p>
-            </div>
-
-            <!-- Cert Card 3: Flat Box Matching Hobbies Style (No Image) -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column; justify-content: center; min-height: 344px;">
-                <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
-                    <i class="fa-solid fa-award" style="color: #60ACF9; font-size: 1.3rem;"></i>
-                    Byte Feast
+                    🏅 Byte Feast
                 </h3>
                 <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
                     1st on MTV Spoof Live
                 </p>
                 <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
-                    Combining two music of Dyosa and Hayup sa Ganda
+                    Combining two music videos of Dyosa and Hayup sa Ganda into a live creative presentation performance.
                 </p>
             </div>
 
@@ -327,7 +344,7 @@
     
     <!-- Section 6: Hobbies -->
     <section id="hobbies">
-        <p class="section-label">05 // Personal Interest</p>
+        
         <h2 class="section-title">Hobbies</h2>
         
         <!-- Grid layout matching the boxes from image_1ec6e1.png -->
@@ -373,22 +390,22 @@
                     Reading & Exploring
                 </h3>
                 <p style="color: var(--text-muted); font-size: 1rem; margin-top: 15px; font-weight: 300; line-height: 1.6;">
-                    Its in my nature to be curious, but i didn't kill the cat
+                    Its in my nature to be curious, but I didn't kill the cat
                 </p>
             </div>
 
         </div>
     </section>
 
-   <!-- Section 7: Contact -->
-    <section id="contact" style="border-bottom: none;">
-        <p class="section-label">06 // Communication</p>
+   <section id="contact" style="border-bottom: none;">
+        
         <h2 class="section-title">Get In Touch</h2>
         
         <!-- Primary Contact Methods -->
         <div class="contact-row">
-            <a href="mailto:your-batiao.princessglory@dnsc.edu.ph" class="contact-link">
-                <i class="fa-regular fa-envelope" style="color: var(--soft-gold)"></i> Email Me
+            <!-- FIXED: Cleaned up the 'mailto:' link and put your actual email address on the button label -->
+            <a href="mailto:batiao.princessglory@dnsc.edu.ph" class="contact-link">
+                <i class="fa-regular fa-envelope" style="color: var(--soft-gold)"></i> Email Me (batiao.princessglory@dnsc.edu.ph)
             </a>
             <a href="https://github.com/Glorianne-fyre" target="_blank" class="contact-link">
                 <i class="fa-brands fa-github" style="color: var(--soft-gold)"></i> GitHub Profile
