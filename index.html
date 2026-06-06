@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Princess Glory | Portfolio</title>
-    <!-- Elegant Serif Typography & Icon Sets -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Elegant Typography & Icon Sets -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -18,10 +18,10 @@
         }
 
         :root {
-            --bg-deep-navy: #16182F;      /* Main background from image_1ee1c0.png */
-            --accent-cobalt: #114D97;     /* Structural framework blue */
-            --highlight-sky: #60ACF9;     /* Label indicator light blue */
-            --soft-gold: #DCBF5C;         /* Premium typography gold */
+            --bg-deep-navy: #16182F;      
+            --accent-cobalt: #114D97;     
+            --highlight-sky: #60ACF9;     
+            --soft-gold: #DCBF5C;         
             --text-pure: #ffffff;
             --text-muted: rgba(255, 255, 255, 0.7);
         }
@@ -38,7 +38,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(22, 24, 47, 0.9);
+            background: rgba(22, 24, 47, 0.95);
             backdrop-filter: blur(10px);
             display: flex;
             justify-content: space-between;
@@ -49,11 +49,12 @@
         }
 
         .nav-logo {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--soft-gold);
             text-decoration: none;
+            letter-spacing: 1px;
         }
 
         .nav-links {
@@ -76,7 +77,7 @@
 
         /* LAYOUT ARCHITECTURE */
         section {
-            padding: 100px 8% 80px 8%;
+            padding: 120px 8% 80px 8%;
             min-height: 80vh;
             display: flex;
             flex-direction: column;
@@ -84,47 +85,11 @@
             border-bottom: 1px solid rgba(17, 77, 151, 0.2);
         }
 
-        .section-label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            color: var(--highlight-sky);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
             color: var(--text-pure);
             margin-bottom: 30px;
-        }
-
-        /* SECTION 1: CLEAN INTRO BANNER */
-        .intro-hero {
-            height: 100vh;
-            border-left: 8px solid var(--accent-cobalt);
-            padding-left: 5%;
-        }
-
-        .intro-hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4.5rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 15px;
-        }
-
-        .intro-hero .gold-title {
-            color: var(--soft-gold);
-            font-style: italic;
-        }
-
-        .intro-hero p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            letter-spacing: 0.1em;
-            max-width: 600px;
         }
 
         /* CONTENT CONTAINERS & CARDS */
@@ -135,11 +100,12 @@
         }
 
         .minimal-card {
-            background: rgba(17, 77, 151, 0.1);
-            border: 1px solid rgba(96, 172, 249, 0.15);
+            background: #1c1e36;
+            border: 1px solid rgba(255, 255, 255, 0.05);
             padding: 30px;
-            border-radius: 4px;
-            transition: transform 0.3s ease;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
         .minimal-card:hover {
@@ -154,49 +120,11 @@
             margin-bottom: 12px;
         }
 
-        /* SKILLS LIST BADGES */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .skill-item {
-            border: 1px solid var(--accent-cobalt);
-            padding: 10px 20px;
-            font-size: 0.9rem;
-            letter-spacing: 0.05em;
-            background: rgba(22, 24, 47, 0.5);
-        }
-
-        /* CONTACT SYSTEM LINKS */
-        .contact-row {
-            display: flex;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            color: var(--text-pure);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-
-        .contact-link:hover {
-            color: var(--soft-gold);
-        }
-
         /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
             .navbar { padding: 20px 4%; }
-            .nav-links { display: none; } /* Mobile simplicity */
-            .intro-hero h1 { font-size: 3rem; }
-            section { padding: 80px 4% 60px 4%; }
+            .nav-links { display: none; } 
+            section { padding: 100px 4% 60px 4%; }
         }
     </style>
 </head>
@@ -204,46 +132,47 @@
 
     <!-- Upper Navbar Structure -->
     <nav class="navbar">
-        <a href="#" class="nav-logo" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--soft-gold); text-decoration: none;">CHOWIE</a>
+        <a href="#" class="nav-logo">CHOWIE</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-<section id="hero" style="background: #121324; padding: 140px 8% 80px 8%; display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; min-height: 85vh; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
+
+    <!-- PERFECTLY ALIGNED HERO INTRO SECTION -->
+    <section id="hero" style="background: #121324; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap; min-height: 100vh; padding-top: 80px;">
         
-        <!-- LEFT SIDE: Luffy waving picture -->
-        <div style="flex: 0 0 320px; display: flex; justify-content: center; align-items: center;">
-            <img src="Green and Red Modern Geometric Thesis Defense Presentation.png" alt="Luffy Yo!" style="width: 100%; max-width: 320px; height: auto;">
+        <!-- LEFT SIDE: Luffy picture inline -->
+        <div style="flex: 0 0 320px; max-width: 320px; display: flex; justify-content: center; align-items: center;">
+            <img src="luffy-hero.png" alt="Luffy Yo!" style="width: 100%; height: auto; display: block;">
         </div>
 
-        <!-- RIGHT SIDE: Text Content -->
-        <div style="flex: 1; min-width: 320px; max-width: 650px; font-family: 'Montserrat', sans-serif;">
-            <h1 style="font-size: 3.5rem; color: #ffffff; font-weight: 800; line-height: 1.2; margin: 0 0 10px 0;">
+        <!-- RIGHT SIDE: Text Content beautifully inline -->
+        <div style="flex: 1; min-width: 300px; max-width: 600px; display: flex; flex-direction: column; justify-content: center;">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 3.5rem; color: #ffffff; font-weight: 800; line-height: 1.1; margin: 0 0 5px 0;">
                 Yo!
             </h1>
-            <h2 style="font-size: 3.2rem; color: var(--soft-gold); font-weight: 800; line-height: 1.2; margin: 0 0 20px 0; letter-spacing: 0.5px;">
+            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.8rem; color: var(--soft-gold); font-weight: 800; line-height: 1.2; margin: 0 0 20px 0; letter-spacing: -0.5px;">
                 I'M PRINCESS GLORY BATIAO
             </h2>
-            <p style="font-size: 1.2rem; color: #ffffff; font-weight: 500; letter-spacing: 1px; border-left: 3px solid var(--soft-gold); padding-left: 15px; margin-top: 25px; text-transform: uppercase;">
-                BACHELOR OF SCIENCE IN INFORMATION SYSTEM
+            <p style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: #ffffff; font-weight: 600; letter-spacing: 1.5px; border-left: 3px solid var(--soft-gold); padding-left: 15px; text-transform: uppercase;">
+                Bachelor of Science in Information System
             </p>
         </div>
 
     </section>
-    
-<section id="about">
+
+    <section id="about">
         <h2 class="section-title" style="margin-top: 20px;">About Me</h2>
         
         <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
             <!-- CORRECT: Your personal solo standing photo -->
             <div style="flex: 0 0 280px; max-width: 280px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                <img src="photo_2026-06-06_13-26-56.jpg" alt="Princess Glory" style="width: 100%; display: block; object-fit: cover;">
-            </div>
+    <img src="photo_2026-06-06_13-26-41.jpg" alt="Princess Glory" style="width: 100%; display: block; object-fit: cover;">
+</    div>
             
             <!-- Biography Text Container -->
             <div style="flex: 1; min-width: 300px; max-width: 650px;">
@@ -257,14 +186,21 @@
         </div>
     </section>
 
-    <!-- Section 3: Skills -->
-    <section id="skills">
-        
+   <section id="skills">
         <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <div class="skill-item">Basic Java</div>
-            <div class="skill-item">Java GUI Drag & Drop</div>
-            <div class="skill-item">Java Database</div>
+        
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px;">
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 400; padding: 14px 28px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.03); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                <i class="fa-brands fa-java" style="color: var(--soft-gold); margin-right: 8px;"></i> Basic Java
+            </span>
+            
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 400; padding: 14px 28px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.03); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                <i class="fa-solid fa-cubes" style="color: var(--soft-gold); margin-right: 8px;"></i> Java GUI Drag & Drop
+            </span>
+            
+            <span style="background: #1c1e36; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 400; padding: 14px 28px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.03); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                <i class="fa-solid fa-database" style="color: var(--soft-gold); margin-right: 8px;"></i> Java Database Management
+            </span>
         </div>
     </section>
 
@@ -312,9 +248,9 @@
 
             <!-- FIXED Cert Card 2: Festival Production for SEEN ON SCREEN -->
             <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
-                <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
-                    <img src="photo_2026-06-06_13-26-41.jpg" alt="Seen on Screen Poster" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                </div>
+                    <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
+                    <img src="photo_2026-06-06_13-26-56.jpg" alt="Seen on Screen Poster" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            </div>
                 <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
                     🪄 Festival Production
                 </h3>
