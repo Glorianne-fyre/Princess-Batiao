@@ -215,28 +215,23 @@
         </ul>
     </nav>
 
-    <!-- Section 1: Minimalist First Page Name Intro -->
-    <section class="intro-hero" id="home">
-        <p class="section-label">Personal Space</p>
-        <h1>Princess Glory <br><span class="gold-title">Batiao</span></h1>
-        <p>Systems & Technology Student / Frontend Architecture Explorer</p>
-    </section>
-
-    <!-- Section 2: About Me -->
     <section id="about">
-        <p class="section-label">01 // Biography</p>
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title" style="margin-top: 20px;">About Me</h2>
         
         <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
-            <!-- Your Profile Picture Container -->
-            <div style="flex: 0 0 280px; max-width: 280px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(220, 191, 92, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                <img src="photo_2026-06-06_13-26-56.jpg" alt="Princess Glory Profile" style="width: 100%; display: block; object-fit: cover;">
+            <!-- Your Solo Profile Photo -->
+            <div style="flex: 0 0 280px; max-width: 280px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                <img src="photo_2026-06-06_13-26-56.jpg" alt="Princess Glory" style="width: 100%; display: block; object-fit: cover;">
             </div>
             
-            <!-- Biography Text Container -->
+            <!-- Your Biography Text -->
             <div style="flex: 1; min-width: 300px; max-width: 650px;">
-                <p style="margin-bottom: 15px;">Hi, I am Princess Glory. I am currently a student exploring technology and systems development. I am focused on learning the core building blocks of development, expanding my knowledge base, and turning ideas into functioning digital projects.</p>
-                <p>Beyond technical systems management, I actively explore creative media formats, team collaborations, and artistic production environments that challenge standard perspectives.</p>
+                <p style="margin-bottom: 15px; font-size: 1.05rem; font-weight: 300; line-height: 1.7; color: var(--text-muted);">
+                    Hi, I am Princess Glory. I am currently a student exploring technology and systems development. I am focused on learning the core building blocks of development, expanding my knowledge base, and turning ideas into functioning digital projects.
+                </p>
+                <p style="font-size: 1.05rem; font-weight: 300; line-height: 1.7; color: var(--text-muted);">
+                    Beyond technical systems management, I actively explore creative media formats, team collaborations, and artistic production environments that challenge standard perspectives.
+                </p>
             </div>
         </div>
     </section>
@@ -269,71 +264,61 @@
         </div>
     </section>
 
-    <!-- Section 5: Certifications -->
     <section id="certifications">
-        <p class="section-label">04 // Achievements</p>
-        <h2 class="section-title">Certifications & Awards</h2>
+        <h2 class="section-title" style="margin-top: 40px;">Certifications & Awards</h2>
         
-        <div class="content-grid" style="display: flex; flex-direction: column; gap: 25px;">
+        <!-- Grid layout perfectly matching the Hobbies design style -->
+        <div class="content-grid">
             
-            <!-- Certificate Item 1: Best Actress -->
-            <div class="certificate-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 25px; display: flex; gap: 25px; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2); flex-wrap: wrap;">
-                <div style="flex: 0 0 180px; max-width: 180px; height: 120px; border-radius: 8px; overflow: hidden; background: #16182F; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);">
+            <!-- Cert Card 1: Best Actress -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+                <!-- Card Image (Top) -->
+                <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
                     <img src="photo_2026-06-06_13-26-49.jpg" alt="Best Actress Award Display" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <div style="flex: 1; min-width: 250px;">
-                    <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: #ffffff; font-weight: 500; margin-bottom: 5px;">
-                        Best Actress — "Seen on Screen"
-                    </h3>
-                    <p style="color: var(--soft-gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.05em;">
-                        PSITS-XI Interschool Short Film Festival 2026
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.5;">
-                        Recognized for the leading performance contribution in the official dramatic presentation entry representing Davao Del Norte State College.
-                    </p>
-                </div>
+                <!-- Card Typography & Description (Bottom) -->
+                <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-clapperboard" style="color: #60ACF9; font-size: 1.3rem;"></i>
+                    Best Actress
+                </h3>
+                <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
+                    "Seen on Screen" 2026
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
+                    Recognized for the leading performance contribution in the official dramatic presentation entry representing Davao Del Norte State College.
+                </p>
             </div>
 
-            <!-- Certificate Item 2: Best Loveteam & Visual Effects -->
-            <div class="certificate-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 25px; display: flex; gap: 25px; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2); flex-wrap: wrap;">
-                <div style="flex: 0 0 180px; max-width: 180px; height: 120px; border-radius: 8px; overflow: hidden; background: #16182F; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);">
+            <!-- Cert Card 2: Best Loveteam & Visual Effects -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+                <!-- Card Image (Top) -->
+                <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
                     <img src="photo_2026-06-06_13-26-41.jpg" alt="Festival Award Summary" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                 </div>
-                <div style="flex: 1; min-width: 250px;">
-                    <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: #ffffff; font-weight: 500; margin-bottom: 5px;">
-                        Best Love Team & Best Visual Effects
-                    </h3>
-                    <p style="color: var(--soft-gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.05em;">
-                        PSITS-XI Regional Interschool Festival Production
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; line-height: 1.5;">
-                        Honored for excellent collaborative presentation onscreen chemistry and outstanding technical production metrics inside regional cinema evaluations.
-                    </p>
-                </div>
+                <!-- Card Typography & Description (Bottom) -->
+                <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-wand-magic-sparkles" style="color: #60ACF9; font-size: 1.3rem;"></i>
+                    Festival Production
+                </h3>
+                <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
+                    Best Loveteam & VFX
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
+                    Honored for excellent collaborative presentation chemistry and outstanding technical production metrics inside regional cinema evaluations.
+                </p>
             </div>
 
-            <!-- Certificate Item 3: Elegant Text Placeholder (No Image) -->
-            <div class="certificate-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 25px; display: flex; gap: 25px; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2); flex-wrap: wrap;">
-                <!-- Modern design icon placeholder instead of a missing broken image link -->
-                <div style="flex: 0 0 180px; max-width: 180px; height: 120px; border-radius: 8px; background: rgba(17, 77, 151, 0.2); display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(220, 191, 92, 0.3);">
-                    <i class="fa-solid fa-award" style="color: var(--soft-gold); font-size: 2.5rem;"></i>
-                </div>
-                
-                <!-- Cert Card 3: Text-Focused Elegant Box (No Image) -->
-            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column; justify-content: center; min-height: 314px;">
-                
-                <!-- Card Typography & Description (No Image Container) -->
-                <h3 class="Byte Feast 3.0" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
-                    <i class="fa-solid fa-code" style="color: #60ACF9; font-size: 1.3rem;"></i>
-                    Systems Certification
+            <!-- Cert Card 3: Flat Box Matching Hobbies Style (No Image) -->
+            <div class="minimal-card" style="background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column; justify-content: center; min-height: 344px;">
+                <h3 class="card-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ffffff; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-award" style="color: #60ACF9; font-size: 1.3rem;"></i>
+                    Byte Feast
                 </h3>
-                
                 <p style="color: var(--soft-gold); font-size: 0.85rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.05em; text-transform: uppercase;">
-                    1st place on Mtv Spoof Live
+                    1st on MTV Spoof Live
                 </p>
-                
                 <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 12px; font-weight: 300; line-height: 1.6;">
-                    We got 1st place in combining the music; Diyosa and Hayup sa Ganda
+                    Combining two music of Dyosa and Hayup sa Ganda
                 </p>
             </div>
 
