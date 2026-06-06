@@ -143,17 +143,17 @@
     </nav>
 
     <!-- PERFECTLY ALIGNED HERO(Luffey) INTRO SECTION -->
-   <section id="hero" style="background: var(--bg-deep-navy); min-height: 85vh; padding: 140px 8% 80px 8%; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(17, 77, 151, 0.2);">
-        <div style="display: flex; align-items: stretch; gap: 40px; max-width: 1200px; width: 100%; flex-wrap: wrap-reverse; justify-content: center;">
+   <section id="hero" style="background: var(--bg-deep-navy); min-height: 80vh; padding: 120px 8% 80px 8%; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(17, 77, 151, 0.2); overflow: hidden;">
+        <div style="display: flex; align-items: center; gap: 20px; max-width: 1200px; width: 100%; flex-wrap: wrap-reverse; justify-content: center;">
             
-            <!-- LEFT SIDE: LUFFY MATCHES THE HEIGHT OF THE TEXT BOX -->
-            <div style="flex: 0 0 240px; width: 240px; display: flex; justify-content: center; align-items: center; min-width: 200px;">
-                <img src="luffy-hero.png" alt="Luffy Yo!" style="width: 100%; height: 100%; max-height: 250px; object-fit: contain; display: block; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.4));">
+            <!-- LEFT SIDE: FORCED HUGE LUFFY MATCHING THE TEXT HEIGHT -->
+            <div style="flex: 0 0 350px; width: 350px; height: 260px; display: flex; justify-content: center; align-items: center; min-width: 280px; overflow: hidden; margin-right: -100px;">
+                <img src="luffy-hero_2.png" alt="Luffy Yo!" style="width: 750px !important; max-width: none !important; height: auto !important; display: block; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.35)); margin-left: -150px; margin-top: 30px;">
             </div>
 
-            <!-- RIGHT SIDE: HERO TEXT -->
-            <div style="flex: 1 1 550px; min-width: 320px; display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 4rem; color: #ffffff; font-weight: 900; line-height: 1.1; margin-bottom: 10px; letter-spacing: -1px;">
+            <!-- RIGHT SIDE: HERO TEXT (HEIGHT STABILIZED AT ~260PX) -->
+            <div style="flex: 1 1 550px; min-width: 320px; display: flex; flex-direction: column; justify-content: center; height: 260px;">
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 4rem; color: #ffffff; font-weight: 900; line-height: 1.1; margin: 0 0 10px 0; letter-spacing: -1px;">
                     Yo!<br>
                     <span style="color: var(--soft-gold);">I'M PRINCESS GLORY BATIAO</span>
                 </h1>
@@ -278,9 +278,9 @@
             
             <!-- 1. BEST ACTRESS -->
             <div class="minimal-card" style="flex: 1 1 320px; max-width: 360px; display: flex; flex-direction: column; gap: 20px; background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                <!-- Best Actress Photo Box -->
-                <div style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.08);">
-                    <img src="photo_2026-06-06_13-26-49.jpg" alt="Best Actress Award Announcement" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                <!-- Updated Image Filename Box -->
+                <div style="width: 100%; height: 240px; border-radius: 12px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.08);">
+                    <img src="photo_2026-06-06_13-26-42.jpg" alt="Best Actress Award Announcement" style="width: 100%; height: 100%; display: block; object-fit: cover;">
                 </div>
                 <div>
                     <h3 class="card-title" style="display: flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 600;">
@@ -297,9 +297,9 @@
 
             <!-- 2. SEEN ON SCREEN -->
             <div class="minimal-card" style="flex: 1 1 320px; max-width: 360px; display: flex; flex-direction: column; gap: 20px; background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                <!-- Festival Poster Box -->
-                <div style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.08);">
-                    <img src="photo_2026-06-06_13-26-56.jpg" alt="Seen on Screen Poster" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                <!-- Fixed Crop Height Image Box -->
+                <div style="width: 100%; height: 240px; border-radius: 12px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.08);">
+                    <img src="photo_2026-06-06_13-26-56.jpg" alt="Seen on Screen Poster" style="width: 100%; height: 100%; display: block; object-fit: cover;">
                 </div>
                 <div>
                     <h3 class="card-title" style="display: flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 600;">
@@ -314,11 +314,11 @@
                 </div>
             </div>
 
-            <!-- 3. BYTE FEAST (WITH CHAMPIONSHIP IMAGE) -->
+            <!-- 3. BYTE FEAST -->
             <div class="minimal-card" style="flex: 1 1 320px; max-width: 360px; display: flex; flex-direction: column; gap: 20px; background: #1c1e36; border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                <!-- Byte Fest Champion Photo Box -->
-                <div style="width: 100%; height: auto; border-radius: 12px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.08);">
-                    <img src="685090043_1419766960194867_3198445864246894160_n.jpg" alt="Byte Feast Bench Yelling Champion" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                <!-- Fixed Crop Height Image Box -->
+                <div style="width: 100%; height: 240px; border-radius: 12px; overflow: hidden; background: #16182F; border: 1px solid rgba(255,255,255,0.08);">
+                    <img src="685090043_1419766960194867_3198445864246894160_n.jpg" alt="Byte Feast Bench Yelling Champion" style="width: 100%; height: 100%; display: block; object-fit: cover;">
                 </div>
                 <div>
                     <h3 class="card-title" style="display: flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 600;">
